@@ -7,7 +7,7 @@ The design is based on the work of Petschnigg et al. [2]. There are three phases
 
 In the denoising phase, we apply joint-bilateral filter to the input. In the detail transfer phase, we divide the flash image by its bilateral filterred image to obtain the detail layer. We then multiply the detail layer with the denoised output.
 
-The heuristic transforms the images to grey scale, blurs them with Gaussian kernel, normalizes and sets a threshold to detect shadows respectively, and marks pixels that are shadows in the flash image but not shadows in the no-flash image. (The threshold for the flash and no-flash shadow detection is 2% and 0.1% respectively.) The specularities are detected from the flash image where pixels have value greater than a threshold (245 in our implementation.)
+The heuristic transforms the images to grey scale, blurs them with Gaussian kernel, normalizes and sets a threshold to detect shadows respectively, and marks pixels that are shadows in the flash image but not shadows in the no-flash image. (The threshold for the flash and no-flash shadow detection is 20% and 5% respectively.) The specularities are detected from the flash image where pixels have value greater than a threshold (245 in our implementation.)
 
 For non-artifacts, we take the result of the denoised and detail transferred image, for pixels detected as artifacts, we can set it as the bilateral filtered no-flash image, or even blend the bilateral filtered no-flash image with the original no-flash image.
 
