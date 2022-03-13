@@ -17,9 +17,9 @@ Flash and Ambient Illuminations Dataset [1].
 The dataset contains images collected by iphone devices.
 
 ## Result
-![cropped result of shadow detection](https://github.com/taipeiyuka/Flash-and-No-Flash-Image-Processing/blob/main/Example/shadow_compare.png?raw=true)
+![cropped result of shadow detection](https://github.com/taipeiyuka/Flash-and-No-Flash-Image-Processing/blob/main/Example/plant_compare.png?raw=true)
 
-![result when shadow detection fail](https://github.com/taipeiyuka/Flash-and-No-Flash-Image-Processing/blob/main/Example/fail_compare.png?raw=true)
+![result when shadow detection fail](https://github.com/taipeiyuka/Flash-and-No-Flash-Image-Processing/blob/main/Example/bell_compare.png?raw=true)
 
 ![compare with previous work](https://github.com/taipeiyuka/Flash-and-No-Flash-Image-Processing/blob/main/Example/paper_compare.png?raw=true)
 
